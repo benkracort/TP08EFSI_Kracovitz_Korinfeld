@@ -1,16 +1,6 @@
 import { useState } from "react";
-import {
-    View,
-    Text,
-    Image,
-    StyleSheet,
-    TouchableOpacity,
-} from "react-native";
-import {
-    Ionicons,
-    Feather,
-    Entypo,
-} from "@expo/vector-icons";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { Ionicons, Feather, Entypo } from "@expo/vector-icons";
 import Avatar from '../shared/Avatar'
 
 export default function PostCard({ post, navigation }) {
@@ -49,12 +39,7 @@ export default function PostCard({ post, navigation }) {
                             {post.location}
                         </Text>
                     </View>
-                </View>
-
-                <Entypo
-                    name="dots-three-vertical"
-                    size={16}
-                />
+                </View> 
             </View>
 
             <TouchableOpacity
@@ -104,7 +89,7 @@ export default function PostCard({ post, navigation }) {
             </View>
 
             <Text style={styles.likes}>
-                {likes.toLocaleString()} Me gusta
+                {likes} Me gusta
             </Text>
 
             <Text style={styles.caption}>
